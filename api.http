@@ -1,0 +1,132 @@
+### ada
+GET http://localhost:8000/api/user
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIwMTk3ZTZlNS1lZTZkLTcxN2UtYjI0OC1lNzkyY2ZiN2Y4YWMiLCJqdGkiOiJlNzk3MDMzMDZhZGE3N2U1YTZhZjViNGI2ODMwOGM1NGYyNzllYWI4YjU5YmYwZmU1ZmZmNWE4MzExOTgwMmI0ZGM4MDMyNjQ4MjgxYTkwMCIsImlhdCI6MTc1MTkyNTU1MC45ODg4OSwibmJmIjoxNzUxOTI1NTUwLjk4ODg5NCwiZXhwIjoxNzgzNDYxNTUwLjk3MjM0Mywic3ViIjoiMTEiLCJzY29wZXMiOltdfQ.wtoc88C1Nq5ivEafHkkI5scCMlmD24tMJ_wr_k6Ww1ubuMP-wP4_O4V_0OBjKcNmvPTgo-qrflRGKDNXiwveqmzL6iNBCdjKxMGEJfbmjxYXLfV0X8x6wGMkYroGcHgE8IJBQ9Fx-8HYoraJfBVeqhE4ITibQNLxO4rE-si2_PDRIpxB2ILOwl7yWN2LUWpgMGk7NdwWqDjPnYW_6bA4NjoQKyIrvqE_UIriSmpVQGYHUYfZdVh03H1yyRRjpwLSCcomd0AQzfSNJNw_4izLynWE_nWjVU0Ri7wSs3-v4GynVFW50tXWNWBCcVW2zNAoEAu7mCvKVWZi1JgDb20Q8I2ue5Iq_Ef7iNGDa1BRhseR0XirJH9QnWbkTdoW79ZY82g_Ri35qYbmVaisDw2IztB_ZN6F1VPmgU3vNQ1aenoF6GzJLQ5jZs9Tj3mD_vjenOdt4eoW8aOK7ERLZOiC-NqisfrvZFDwgfIB3FnxWd9rhUYD2FjpOKTbpFFjH-VsjycEYe1epf6MdPn4xO70dYBiA7DEVkMeHinW7mQtP1WNjWLAO68OAlepjeLy9QPv9Wj4GLjVsWaxeyhEc2P3PH76GCSfO6wsMkWiQQ2njYPKlepFFhPTgJTgaB0_bcAaTp2OOY7se-Zowg3ehqdk57lzXdmkqSzzmHOVrX1BarY
+
+###
+GET  http://127.0.0.1:8000/api/products?page=2
+Content-Type: application/json
+Accept: application/json
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIwMTk3ZTZlNS1lZTZkLTcxN2UtYjI0OC1lNzkyY2ZiN2Y4YWMiLCJqdGkiOiJlNzk3MDMzMDZhZGE3N2U1YTZhZjViNGI2ODMwOGM1NGYyNzllYWI4YjU5YmYwZmU1ZmZmNWE4MzExOTgwMmI0ZGM4MDMyNjQ4MjgxYTkwMCIsImlhdCI6MTc1MTkyNTU1MC45ODg4OSwibmJmIjoxNzUxOTI1NTUwLjk4ODg5NCwiZXhwIjoxNzgzNDYxNTUwLjk3MjM0Mywic3ViIjoiMTEiLCJzY29wZXMiOltdfQ.wtoc88C1Nq5ivEafHkkI5scCMlmD24tMJ_wr_k6Ww1ubuMP-wP4_O4V_0OBjKcNmvPTgo-qrflRGKDNXiwveqmzL6iNBCdjKxMGEJfbmjxYXLfV0X8x6wGMkYroGcHgE8IJBQ9Fx-8HYoraJfBVeqhE4ITibQNLxO4rE-si2_PDRIpxB2ILOwl7yWN2LUWpgMGk7NdwWqDjPnYW_6bA4NjoQKyIrvqE_UIriSmpVQGYHUYfZdVh03H1yyRRjpwLSCcomd0AQzfSNJNw_4izLynWE_nWjVU0Ri7wSs3-v4GynVFW50tXWNWBCcVW2zNAoEAu7mCvKVWZi1JgDb20Q8I2ue5Iq_Ef7iNGDa1BRhseR0XirJH9QnWbkTdoW79ZY82g_Ri35qYbmVaisDw2IztB_ZN6F1VPmgU3vNQ1aenoF6GzJLQ5jZs9Tj3mD_vjenOdt4eoW8aOK7ERLZOiC-NqisfrvZFDwgfIB3FnxWd9rhUYD2FjpOKTbpFFjH-VsjycEYe1epf6MdPn4xO70dYBiA7DEVkMeHinW7mQtP1WNjWLAO68OAlepjeLy9QPv9Wj4GLjVsWaxeyhEc2P3PH76GCSfO6wsMkWiQQ2njYPKlepFFhPTgJTgaB0_bcAaTp2OOY7se-Zowg3ehqdk57lzXdmkqSzzmHOVrX1BarY
+###~Enviar
+
+POST http://127.0.0.1:8000/api/products
+Content-Type: application/json
+Accept: application/json
+
+{
+    "name": "Chatarra",
+    "price": 10,
+    "imageUrl": "https//adadad.com"
+}
+
+### Update PArt
+
+PATCH   http://127.0.0.1:8000/api/products/2
+Content-Type: application/json
+Accept: application/json
+
+{
+    "name": "Pepe",
+    "price": 100
+}
+
+### delete Product
+DELETE  http://127.0.0.1:8000/api/products/4
+Content-Type: application/json
+Accept: application/json
+
+### discounts
+GET http://127.0.0.1:8000/api/discount
+Content-Type: application/json
+Accept: application/json
+
+### delete discount
+DELETE  http://127.0.0.1:8000/api/discount/2
+Content-Type: application/json
+Accept: application/json
+
+
+### show method
+GET http://127.0.0.1:8000/api/discount/1
+Content-Type: application/json
+Accept: application/json
+
+### Post Request
+POST http://127.0.0.1:8000/api/discount
+Content-Type: application/json
+Accept: application/json
+
+{
+    "name": "20 porciento"
+    "percent": 20,
+    "active": true
+}
+
+### Update Method of discount
+PATCH   http://127.0.0.1:8000/api/discount/1
+Content-Type: application/json
+Accept: application/json
+
+{
+    "percent": 50
+}
+
+### todas las listas
+GET http://127.0.0.1:8000/api/productList/2
+Content-Type: application/json
+Accept: application/json
+
+### crear una lista
+
+POST http://127.0.0.1:8000/api/productList
+Content-Type: application/json
+Accept: application/json
+
+{
+    "count" : 10,
+    "orderId": 1,
+    "productId": 2,
+    "discountId":3
+}
+
+### Updata methos Me
+PATCH   http://127.0.0.1:8000/api/productList/53
+Content-Type: application/json
+Accept: application/json
+
+{
+    "productId": 10
+}
+
+
+#### Order get
+
+GET http://127.0.0.1:8000/api/order/1
+Content-Type: application/json
+Accept: application/json
+
+###DElete order
+DELETE  http://127.0.0.1:8000/api/order/2
+Content-Type: application/json
+Accept: application/json
+
+
+### Post de order
+POST http://127.0.0.1:8000/api/order
+Content-Type: application/json
+Accept: application/json
+
+{
+    "userId":1
+}
+
+### Upadate method
+PUT http://127.0.0.1:8000/api/order/1
+Content-Type: application/json
+Accept: application/json
+
+{
+    "userId":5
+}
